@@ -6,13 +6,29 @@
 -- DDL commands for SQL 
 
 
+-- CREATE DATABASE
+CREATE DATABASE college;
+
+
+-- USE DATABASE
+USE college;
+
+
 -- CREATE TABLES
 CREATE TABLE students(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT,  
     roll INT NOT NULL UNIQUE ,
     dept TEXT NOT NULL
 );
+
+-- Explanation 
+/**
+* PRIMARY KEY => This is a unique identifier for each row in the table.
+* AUTO_INCREMENT => Increments the value of the primary key column each time a new row is inserted.
+* NOT NULL => This means that the column cannot contain NULL values.
+* UNIQUE => This means that the column cannot contain duplicate values.
+* TEXT => This means that the column can contain alphanumeric characters.
+**/
 
 
 
