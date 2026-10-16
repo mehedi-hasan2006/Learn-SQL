@@ -3,7 +3,7 @@
 
 */
 
--- DDL commands for SQL 
+-- DDL commands for SQL . DDL stands for Data Definition Language
 
 
 -- CREATE DATABASE
@@ -18,6 +18,7 @@ USE college;
 CREATE TABLE students(
     id INT PRIMARY KEY AUTO_INCREMENT,  
     roll INT NOT NULL UNIQUE ,
+    name VARCHAR(100) NOT NULL,
     dept TEXT NOT NULL
 );
 
